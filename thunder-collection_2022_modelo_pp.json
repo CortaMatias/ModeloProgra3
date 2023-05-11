@@ -1,0 +1,513 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "2022_modelo_pp",
+    "dateExported": "2023-05-11T20:37:43.908Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "0acd074e-a0a1-4b92-b587-2fc1212ab9c1",
+            "colId": "0f976231-72f5-4c73-8299-77e2d90ea5f6",
+            "containerId": "",
+            "name": "login - no válido",
+            "url": "http://localhost/modelo_pp/test.php",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-05-08T20:38:01.160Z",
+            "modified": "2023-05-08T20:38:01.160Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "opcion",
+                        "value": "login"
+                    },
+                    {
+                        "name": "correo",
+                        "value": "algo@algo.com"
+                    },
+                    {
+                        "name": "clave",
+                        "value": "123"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "a9c91301-ecd7-4aeb-95b7-f5aac7cb9232",
+            "colId": "0f976231-72f5-4c73-8299-77e2d90ea5f6",
+            "containerId": "",
+            "name": "login - válido",
+            "url": "http://localhost/modelo_pp/test.php",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-05-08T20:38:01.161Z",
+            "modified": "2023-05-08T20:38:01.161Z",
+            "headers": [],
+            "body": {
+                "form": [
+                    {
+                        "name": "opcion",
+                        "value": "login"
+                    },
+                    {
+                        "name": "correo",
+                        "value": "admin@admin.com"
+                    },
+                    {
+                        "name": "clave",
+                        "value": "admin123"
+                    }
+                ],
+                "files": [],
+                "type": "formdata"
+            }
+        },
+        {
+            "_id": "ccddabee-71a6-4ab1-9364-4efe4f7e4b55",
+            "colId": "0f976231-72f5-4c73-8299-77e2d90ea5f6",
+            "containerId": "",
+            "name": "mostrar",
+            "url": "http://localhost/modelo_pp/test.php",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-05-08T20:38:01.162Z",
+            "modified": "2023-05-08T20:38:01.162Z",
+            "headers": [],
+            "body": {
+                "form": [
+                    {
+                        "name": "opcion",
+                        "value": "mostrar"
+                    }
+                ],
+                "files": [],
+                "type": "formdata"
+            }
+        },
+        {
+            "_id": "a8a6c138-7078-4cf9-9ed4-3871b5db55d1",
+            "colId": "0f976231-72f5-4c73-8299-77e2d90ea5f6",
+            "containerId": "",
+            "name": "alta",
+            "url": "http://localhost/modelo_pp/test.php",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-05-08T20:38:01.163Z",
+            "modified": "2023-05-08T20:38:01.163Z",
+            "headers": [],
+            "body": {
+                "form": [
+                    {
+                        "name": "opcion",
+                        "value": "alta"
+                    },
+                    {
+                        "name": "obj_json",
+                        "value": "{\"correo\":\"pedro@pedro.com\",\"clave\":\"123\",\"nombre\":\"pedro\",\"perfil\":3}"
+                    }
+                ],
+                "files": [],
+                "type": "formdata"
+            }
+        },
+        {
+            "_id": "4ff25da0-457d-4fbd-a390-dca0d2d7fc3e",
+            "colId": "0f976231-72f5-4c73-8299-77e2d90ea5f6",
+            "containerId": "",
+            "name": "modificacion",
+            "url": "http://localhost/modelo_pp/test.php",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-05-08T20:38:01.164Z",
+            "modified": "2023-05-08T20:38:01.164Z",
+            "headers": [],
+            "body": {
+                "form": [
+                    {
+                        "name": "opcion",
+                        "value": "modificacion"
+                    },
+                    {
+                        "name": "obj_json",
+                        "value": "{\"correo\":\"pedro_modif@pedro.com\",\"clave\":\"123_modif\",\"nombre\":\"pedro_modif\",\"perfil\":1}"
+                    },
+                    {
+                        "name": "id",
+                        "value": "4"
+                    },
+                    {
+                        "name": "obj_json",
+                        "value": "{\"correo\":\"pedro@pedro.com\",\"clave\":\"123\",\"nombre\":\"pedro\",\"perfil\":3}",
+                        "isDisabled": true
+                    }
+                ],
+                "files": [],
+                "type": "formdata"
+            }
+        },
+        {
+            "_id": "50f3a466-e1ea-4dcf-898a-71a735fe7048",
+            "colId": "0f976231-72f5-4c73-8299-77e2d90ea5f6",
+            "containerId": "",
+            "name": "baja",
+            "url": "http://localhost/modelo_pp/test.php",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2023-05-08T20:38:01.166Z",
+            "modified": "2023-05-08T20:38:01.166Z",
+            "headers": [],
+            "body": {
+                "form": [
+                    {
+                        "name": "opcion",
+                        "value": "baja"
+                    },
+                    {
+                        "name": "id",
+                        "value": "6"
+                    }
+                ],
+                "files": [],
+                "type": "formdata"
+            }
+        },
+        {
+            "_id": "df728971-2b50-4363-9562-2f897697cc21",
+            "colId": "0f976231-72f5-4c73-8299-77e2d90ea5f6",
+            "containerId": "",
+            "name": "modelo - altaUsuarioJSON",
+            "url": "http://localhost/modelo_pp/backend/AltaUsuarioJSON.php",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2023-05-08T20:38:01.167Z",
+            "modified": "2023-05-08T20:43:07.569Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "correo",
+                        "value": "pedro@mail.com"
+                    },
+                    {
+                        "name": "clave",
+                        "value": "123"
+                    },
+                    {
+                        "name": "nombre",
+                        "value": "pedro"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "a5ca2985-d8a1-4b87-a838-0c0b78fcb121",
+            "colId": "0f976231-72f5-4c73-8299-77e2d90ea5f6",
+            "containerId": "",
+            "name": "modelo - listadoUsuariosJSON",
+            "url": "http://localhost/modelo_pp/backend/ListadoUsuariosJSON.php",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2023-05-08T20:38:01.168Z",
+            "modified": "2023-05-08T20:38:01.168Z",
+            "headers": []
+        },
+        {
+            "_id": "6d2bd641-4313-4603-bd49-4fcde751217e",
+            "colId": "0f976231-72f5-4c73-8299-77e2d90ea5f6",
+            "containerId": "",
+            "name": "modelo - AltaUsuario",
+            "url": "http://localhost/modelo_pp/backend/AltaUsuario.php",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2023-05-08T20:38:01.169Z",
+            "modified": "2023-05-08T23:03:18.535Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "correo",
+                        "value": "pablo@mail.com"
+                    },
+                    {
+                        "name": "clave",
+                        "value": "123"
+                    },
+                    {
+                        "name": "nombre",
+                        "value": "pablo"
+                    },
+                    {
+                        "name": "id_perfil",
+                        "value": "3"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "be1b70b7-b926-41db-8309-e08eaf2d72f4",
+            "colId": "0f976231-72f5-4c73-8299-77e2d90ea5f6",
+            "containerId": "",
+            "name": "modelo - ListadoUsuarios",
+            "url": "http://localhost/modelo_pp/backend/ListadoUsuarios.php?tabla=mostrar",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2023-05-08T20:38:01.170Z",
+            "modified": "2023-05-08T23:18:26.719Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "tabla",
+                    "value": "mostrar",
+                    "isPath": false
+                },
+                {
+                    "name": "tabla",
+                    "value": "\"\"",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "2b799546-f778-4bd7-92cb-baba56e6858c",
+            "colId": "0f976231-72f5-4c73-8299-77e2d90ea5f6",
+            "containerId": "",
+            "name": "modelo - VerificarUsuario",
+            "url": "http://localhost/modelo_pp/backend/VerificarUsuarioJSON.php",
+            "method": "POST",
+            "sortNum": 110000,
+            "created": "2023-05-08T20:38:01.171Z",
+            "modified": "2023-05-08T21:26:24.006Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "usuario_json",
+                        "value": "{\"correo\":\"pablo@mail.com\", \"clave\":123}"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "1be7405b-1603-434a-a0c6-4ab9fb050807",
+            "colId": "0f976231-72f5-4c73-8299-77e2d90ea5f6",
+            "containerId": "",
+            "name": "modelo - ModificarUsuario",
+            "url": "http://localhost/modelo_pp/backend/ModificarUsuario.php",
+            "method": "POST",
+            "sortNum": 120000,
+            "created": "2023-05-08T20:38:01.172Z",
+            "modified": "2023-05-08T23:30:26.062Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "usuario_json",
+                        "value": "{\"id\":5, \"correo\":\"javipino@mail.com.ar\", \"clave\":1234, \"nombre\":\"javier pino\", \"id_perfil\": 3}"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "96d5eae8-cb8f-49be-b631-3f4e54d587b3",
+            "colId": "0f976231-72f5-4c73-8299-77e2d90ea5f6",
+            "containerId": "",
+            "name": "modelo - EliminarUsuario",
+            "url": "http://localhost/modelo_pp/backend/EliminarUsuario.php",
+            "method": "POST",
+            "sortNum": 130000,
+            "created": "2023-05-08T20:38:01.173Z",
+            "modified": "2023-05-08T23:42:54.474Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "id",
+                        "value": "9"
+                    },
+                    {
+                        "name": "accion",
+                        "value": "borrar"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "9bf7888b-c92f-45c3-ac98-dbaefbfe681e",
+            "colId": "0f976231-72f5-4c73-8299-77e2d90ea5f6",
+            "containerId": "",
+            "name": "modelo - AltaEmpleado",
+            "url": "http://localhost/modelo_pp/backend/AltaEmpleado.php",
+            "method": "POST",
+            "sortNum": 140000,
+            "created": "2023-05-08T20:38:01.174Z",
+            "modified": "2023-05-11T18:17:14.124Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "nombre",
+                        "value": "Alfredito"
+                    },
+                    {
+                        "name": "correo",
+                        "value": "Alfredito@mail.com"
+                    },
+                    {
+                        "name": "clave",
+                        "value": "2930a"
+                    },
+                    {
+                        "name": "id_perfil",
+                        "value": "1"
+                    },
+                    {
+                        "name": "sueldo",
+                        "value": "25099"
+                    },
+                    {
+                        "name": "accion",
+                        "value": "agregarArchivo"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "foto",
+                        "value": "c:\\Users\\Mati\\Desktop\\foto.png"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "4fa88cf5-0c22-4f88-8535-d440910cb3e7",
+            "colId": "0f976231-72f5-4c73-8299-77e2d90ea5f6",
+            "containerId": "",
+            "name": "modelo - ListadoEmpleados",
+            "url": "http://localhost/modelo_pp/backend/ListadoEmpleados.php?tabla=mostrar",
+            "method": "GET",
+            "sortNum": 150000,
+            "created": "2023-05-08T20:38:01.175Z",
+            "modified": "2023-05-09T01:53:43.687Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "tabla",
+                    "value": "mostrar",
+                    "isPath": false
+                },
+                {
+                    "name": "tabla",
+                    "value": "\"\"",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "094cdeda-7fc5-449a-8eb9-29c7a23acbd5",
+            "colId": "0f976231-72f5-4c73-8299-77e2d90ea5f6",
+            "containerId": "",
+            "name": "modelo - ModificarEmpleado",
+            "url": "http://localhost/modelo_pp/backend/ModificarEmpleado.php",
+            "method": "POST",
+            "sortNum": 160000,
+            "created": "2023-05-08T20:38:01.176Z",
+            "modified": "2023-05-11T19:09:38.581Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "empleado_json",
+                        "value": "{\"id\":21, \"correo\":\"javisarrr@mail.com\", \"clave\":123, \"nombre\":\"javier\", \"id_perfil\": 1, \"sueldo\":33500, \"path_foto\": \"fake.jpg\"}",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "accion",
+                        "value": "modificarArchivo"
+                    },
+                    {
+                        "name": "empleado_json",
+                        "value": "{\"id\":25,\"nombre\":\"Alfredito-CambiadoDENUEVO\",\"correo\":\"Alfredito@mail.com\",\"clave\":\"2930a\",\"id_perfil\":2,\"sueldo\":25099,\"foto\":\".\\/empleados\\/fotos\\/Alfredito.201714.png\"}"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "foto",
+                        "value": "c:\\Users\\Mati\\Desktop\\foto.png"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "8c538e4d-a290-46d1-a3b5-7f3c76cabf4f",
+            "colId": "0f976231-72f5-4c73-8299-77e2d90ea5f6",
+            "containerId": "",
+            "name": "modelo - EliminarEmpleado",
+            "url": "http://localhost/modelo_pp/backend/EliminarEmpleado.php",
+            "method": "POST",
+            "sortNum": 170000,
+            "created": "2023-05-08T20:38:01.177Z",
+            "modified": "2023-05-11T20:20:56.373Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "id",
+                        "value": "21"
+                    },
+                    {
+                        "name": "accion",
+                        "value": "eliminarArchivo"
+                    },
+                    {
+                        "name": "clave",
+                        "value": "2930a"
+                    },
+                    {
+                        "name": "correo",
+                        "value": "Alfredito@mail.com"
+                    }
+                ]
+            },
+            "tests": []
+        }
+    ]
+}
